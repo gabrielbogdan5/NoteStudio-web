@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NoteStudio — Privacy Policy</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0f0a1e;
+    --surface: #1a1030;
+    --border: #2d2050;
+    --accent: #b78fff;
+    --accent2: #64e0c8;
+    --text: #f0ecf8;
+    --text2: #a899cc;
+    --text3: #6b5e8a;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.8;
+    min-height: 100vh;
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(var(--border) 1px, transparent 1px),
+      linear-gradient(90deg, var(--border) 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: 0.18;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .wrap {
+    position: relative;
+    z-index: 1;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 60px 24px 80px;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border);
+  }
+  .logo-mark {
+    width: 44px;
+    height: 44px;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: #1a0a2e;
+    font-weight: 600;
+  }
+  .header-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.2;
+  }
+  .header-text p {
+    font-size: 12px;
+    color: var(--text3);
+    margin-top: 2px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  .updated-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 5px 14px;
+    font-size: 11px;
+    color: var(--text3);
+    margin-bottom: 36px;
+    letter-spacing: 0.04em;
+  }
+  .updated-chip::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: var(--accent2);
+    border-radius: 50%;
+  }
+  .intro {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 10px;
+    padding: 20px 22px;
+    margin-bottom: 40px;
+    font-size: 14px;
+    color: var(--text2);
+    line-height: 1.7;
+  }
+  .section { margin-bottom: 36px; }
+  .section-num {
+    font-size: 10px;
+    color: var(--accent);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+  .section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 12px;
+  }
+  .section p, .section li {
+    font-size: 14px;
+    color: var(--text2);
+    line-height: 1.8;
+  }
+  .section ul { list-style: none; padding: 0; margin-top: 8px; }
+  .section ul li { padding: 5px 0 5px 20px; position: relative; }
+  .section ul li::before {
+    content: '\25B8';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-size: 10px;
+    top: 7px;
+  }
+  .divider { border: none; border-top: 1px solid var(--border); margin: 36px 0; }
+  .highlight {
+    background: rgba(183,143,255,0.07);
+    border: 1px solid rgba(183,143,255,0.2);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin-top: 12px;
+    font-size: 13px;
+    color: var(--text2);
+  }
+  .highlight strong { color: var(--accent); font-weight: 500; }
+  .contact-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 22px 24px;
+    margin-top: 12px;
+  }
+  .contact-box p { font-size: 14px; color: var(--text2); margin-bottom: 8px; }
+  .contact-box a { color: var(--accent); text-decoration: none; font-size: 14px; }
+  .contact-box a:hover { text-decoration: underline; }
+  .footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    font-size: 12px;
+    color: var(--text3);
+  }
+  .footer span { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="header">
+    <div class="logo-mark">N</div>
+    <div class="header-text">
+      <h1>NoteStudio</h1>
+      <p>Privacy Policy</p>
+    </div>
+  </div>
+
+  <div class="updated-chip">Last updated: April 2025</div>
+
+  <div class="intro">
+    This privacy policy describes how the <strong>NoteStudio</strong> app collects, uses, and protects your information. By using the app, you agree to the terms described below.
+  </div>
+
+  <!-- 1 -->
+  <div class="section">
+    <div class="section-num">01</div>
+    <h2>Data We Collect</h2>
+    <p>NoteStudio is a local notes application. Your notes are stored exclusively on your device and are <strong>never transmitted</strong> to external servers.</p>
+    <ul>
+      <li>Note content (title, text) — stored locally on your device</li>
+      <li>App preferences (theme, language, font size) — stored locally</li>
+      <li>We do not collect names, email addresses, or any personal identifiers</li>
+    </ul>
+  </div>
+
+  <hr class="divider">
+
+  <!-- 2 -->
+  <div class="section">
+    <div class="section-num">02</div>
+    <h2>Advertising (Google AdMob)</h2>
+    <p>The free version of the app contains ads provided by <strong>Google AdMob</strong>. By displaying ads, Google may collect certain data according to its own privacy policy.</p>
+    <div class="highlight">
+      <strong>What AdMob may collect:</strong><br>
+      Device advertising identifiers (GAID), approximate IP address, device type and operating system, interactions with ads. This data is used to display relevant advertisements.
+    </div>
+    <p style="margin-top:12px">You can manage your advertising preferences in <strong>Android Settings &rarr; Google &rarr; Ads</strong>.</p>
+    <p style="margin-top:8px">Google AdMob Privacy Policy: <a href="https://policies.google.com/privacy" style="color:var(--accent)">policies.google.com/privacy</a></p>
+  </div>
+
+  <hr class="divider">
+
+  <!-- 3 -->
+  <div class="section">
+    <div class="section-num">03</div>
+    <h2>Permissions Requested</h2>
+    <p>The app requests a minimal set of permissions:</p>
+    <ul>
+      <li><strong>Internet</strong> — required exclusively for displaying AdMob ads</li>
+      <li><strong>Network access</strong> — to check internet connectivity</li>
+    </ul>
+    <p style="margin-top:10px">The app does <strong>not</strong> request access to your camera, microphone, contacts, location, or external storage.</p>
+  </div>
+
+  <hr class="divider">
+
+  <!-- 4 -->
+  <div class="section">
+    <div class="section-num">04</div>
+    <h2>Data Security</h2>
+    <p>Since all app data is stored locally on your device, its security depends on the security of your device. We recommend using a PIN or fingerprint lock screen.</p>
+    <p style="margin-top:10px">We do not have access to your notes and cannot recover them if you uninstall the app or clear the app data.</p>
+  </div>
+
+  <hr class="divider">
+
+  <!-- 5 -->
+  <div class="section">
+    <div class="section-num">05</div>
+    <h2>Children and Minimum Age</h2>
+    <p>NoteStudio is not intended for children under 13 years of age. We do not knowingly collect personal data from children. If you are a parent and believe your child has provided personal data, please contact us.</p>
+  </div>
+
+  <hr class="divider">
+
+  <!-- 6 -->
+  <div class="section">
+    <div class="section-num">06</div>
+    <h2>Changes to This Policy</h2>
+    <p>We reserve the right to update this privacy policy. Any changes will be communicated by updating the date above. Continued use of the app after changes constitutes your acceptance.</p>
+  </div>
+
+  <hr class="divider">
+
+  <!-- 7 -->
+  <div class="section">
+    <div class="section-num">07</div>
+    <h2>Contact</h2>
+    <p>For any questions regarding this privacy policy:</p>
+    <div class="contact-box">
+      <p>&#128231; Email: <a href="mailto:notestudiocontact@gmail.com">notestudiocontact@gmail.com</a></p>
+    </div>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 <span>NoteStudio</span>. All rights reserved.
+  </div>
+
+</div>
+</body>
+</html>
